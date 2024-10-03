@@ -30,9 +30,10 @@ const XDictionary = () => {
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Search for a word"
+        placeholder="Search for a word..."
       />
       <button onClick={handleSearch}>Search</button>
+      <h3>Definition:</h3>
       <p>{result}</p>
     </div>
   );
